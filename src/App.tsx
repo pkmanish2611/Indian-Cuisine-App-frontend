@@ -7,6 +7,7 @@ import { DishDetail } from './pages/DishDetail/DishDetail';
 import { Login } from './pages/Login/Login';
 import { PrivateRoute } from './components/common/PrivateRoute';
 import { store } from './store/store';
+import { AuthInitializer } from './components/common/AuthInitializer';
 import './styles/global.css';
 
 initializeIcons();
@@ -15,25 +16,27 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/"
-            element={
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/dish/:name"
-            element={
-              <PrivateRoute>
-                <DishDetail />
-              </PrivateRoute>
-            }
-          />
-        </Routes>
+        <AuthInitializer>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/dish/:name"
+              element={
+                <PrivateRoute>
+                  <DishDetail />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
+        </AuthInitializer>
       </Router>
     </Provider>
   );

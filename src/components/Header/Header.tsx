@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Stack, SearchBox, Text, Image, PrimaryButton } from '@fluentui/react';
 import { searchDishes } from '../../api/dishes';
-import { isAuthenticated, logout } from '../../api/auth';
+import { isAuthenticated, logoutUser } from '../../api/auth';
 import './Header.css';
 
 export const Header: React.FC = () => {
@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
   };
 
   const handleLogout = () => {
-    logout();
+    logoutUser();
     setIsLoggedIn(false);
     navigate('/login');
   };
