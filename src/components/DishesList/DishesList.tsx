@@ -101,7 +101,7 @@ export const DishesList: React.FC = () => {
             options={[
               { key: '', text: 'All' },
               { key: 'vegetarian', text: 'Vegetarian' },
-              { key: 'non-vegetarian', text: 'Non-Vegetarian' },
+              { key: 'non vegetarian', text: 'Non-Vegetarian' },
             ]}
             onChange={(e, option) => handleFilterChange('diet', option?.key as string)}
           />

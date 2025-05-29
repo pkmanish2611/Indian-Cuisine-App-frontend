@@ -56,12 +56,12 @@ export const Header: React.FC = () => {
         <Stack horizontal verticalAlign="center" tokens={{ childrenGap: 10 }}>
           <Image
             src="/logo.png"
-            alt="Indian Dishes Explorer"
+            alt="Indian Cuisine App"
             width={40}
             height={40}
           />
           <Text variant="large" className="app-title">
-            Indian Dishes Explorer
+            Indian Cuisine App
           </Text>
         </Stack>
 
