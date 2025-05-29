@@ -58,23 +58,31 @@ A modern React frontend for exploring Indian cuisine dishes with advanced search
 
 Clone the repository:
 
-git clone https://github.com/yourusername/indian-dishes-explorer.git
+git clone https://github.com/pkmanish2611/Indian-Cuisine-App-frontend.git
+
 cd indian-dishes-explorer
 
 Install dependencies:
+
 npm install
 
 Set up environment:
+
 cp .env.example .env
 
 ## Configuration ⚙️
 Edit the .env file:
+
 .env
+
 REACT_APP_API_BASE_URL=http://localhost:3000/api,
+
 REACT_APP_ENV=development
+
 
 ## Running the App 🚀
 Start development server:
+
 npm start
 
 Runs the app in development mode at http://localhost:3000.
