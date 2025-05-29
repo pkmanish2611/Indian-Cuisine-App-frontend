@@ -66,9 +66,10 @@ Install dependencies:
 
 npm install
 
+## Configuration
 Set up environment:
 
-cp .env.example .env
+.env.example .env
 
 REACT_APP_API_BASE_URL=http://localhost:3000/api,
 
@@ -82,6 +83,7 @@ npm start
 
 Runs the app in development mode at http://localhost:3000.
 
-Connecting to Backend 🔌
+## Connecting to Backend 🔌
 This frontend is designed to work with the Indian Cuisine Explorer API.
+
 Set the REACT_APP_API_BASE_URL in .env file to point to backend API.
