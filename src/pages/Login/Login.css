@@ -1,0 +1,36 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f2f1;
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.error-message {
+  color: #a4262c;
+}
+
+.login-button {
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+    margin: 10px;
+  }
+}

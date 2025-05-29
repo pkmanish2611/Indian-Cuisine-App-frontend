@@ -1,0 +1,28 @@
+.dishes-list-container {
+  padding: 20px;
+}
+
+.filter-controls {
+  margin-bottom: 20px;
+}
+
+.dishes-table {
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dishes-list-container {
+    padding: 10px;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

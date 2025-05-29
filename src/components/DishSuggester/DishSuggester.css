@@ -1,0 +1,29 @@
+.dish-suggester-container {
+  padding: 20px;
+  background-color: #faf9f8;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.ingredient-picker {
+  margin-bottom: 15px;
+}
+
+.suggest-button {
+  margin-bottom: 15px;
+}
+
+.suggestions-list {
+  margin-top: 15px;
+}
+
+.suggestion-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #edebe9;
+}
+
+@media (max-width: 768px) {
+  .dish-suggester-container {
+    padding: 15px;
+  }
+}
