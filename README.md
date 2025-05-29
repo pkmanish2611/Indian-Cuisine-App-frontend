@@ -60,7 +60,7 @@ Clone the repository:
 
 git clone https://github.com/pkmanish2611/Indian-Cuisine-App-frontend.git
 
-cd indian-dishes-explorer
+cd Indian-Cuisine-App-frontend
 
 Install dependencies:
 
