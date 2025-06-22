@@ -10,6 +10,12 @@ export interface Dish {
   region: string;
 }
 
+export interface Ingredients{
+  success: boolean;
+  count: number;
+  data: string[];
+}
+
 export interface PaginatedResponse<T> {
   success: boolean;
   count: number;

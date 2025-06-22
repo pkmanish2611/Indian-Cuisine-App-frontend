@@ -33,6 +33,11 @@ export const searchDishes = async (query: string): Promise<Dish[]> => {
   return response.data.data;
 };
 
+export const getAllIngredients = async (): Promise<string[]> => {
+  const response = await api.get(`/dishes/ingredients`);
+  return response.data.data;
+};
+
 export const getDishSuggestions = async (
   ingredients: DishSuggestionRequest
 ): Promise<Dish[]> => {

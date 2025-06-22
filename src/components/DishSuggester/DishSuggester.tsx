@@ -9,7 +9,7 @@ import {
   Text,
   Spinner,
 } from '@fluentui/react';
-import { getDishSuggestions } from '../../api/dishes';
+import { getDishSuggestions, getAllIngredients } from '../../api/dishes';
 import './DishSuggester.css';
 
 export const DishSuggester: React.FC = () => {
@@ -17,25 +17,19 @@ export const DishSuggester: React.FC = () => {
   const [suggestedDishes, setSuggestedDishes] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [allIngredients, setAllIngredients] = useState<string[]>([]);
+  
 
   useEffect(() => {
-    const fetchIngredients = async () => {
-      // In a real app, this would come from an API endpoint
-      const ingredients = [
-        'Rice flour',
-        'coconut',
-        'jaggery',
-        'banana',
-        'ghee',
-        'maida flour',
-        'yogurt',
-        'oil',
-        'sugar',
-        'chicken',
-      ];
-      setAllIngredients(ingredients);
-    };
 
+    const fetchIngredients = async () => {
+      try{
+      const ingredients = await getAllIngredients();
+      setAllIngredients(ingredients);
+    }catch(error){
+      console.error('ingredients not available');
+    }
+    };
+    
     fetchIngredients();
   }, []);
 
